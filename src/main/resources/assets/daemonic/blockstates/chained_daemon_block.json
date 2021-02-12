@@ -1,0 +1,5 @@
+{
+  "variants": {
+    "": { "model": "daemonic:block/chained_daemon_block" }
+  }
+}

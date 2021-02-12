@@ -1,0 +1,8 @@
+{
+  "replace": false,
+  "values": [
+    "minecraft:chain",
+    "daemonic:chain_block",
+    "daemonic:chained_daemon_block"
+  ]
+}

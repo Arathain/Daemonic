@@ -1,0 +1,18 @@
+{
+  "effect.daemonic.transmutation": "Transmutation",
+  "origin.daemonic.possessed.name": "Possessed",
+  "origin.daemonic.possessed.description": "Human and daemon sharing body, not quite spirit and not quite man.",
+  "power.daemonic.ethereal.name": "Ethereal",
+  "power.daemonic.ethereal.description": "You can briefly become ethereal, being able to quickly evade danger and bypass most barriers.",
+  "power.daemonic.animated.name": "Animated",
+  "power.daemonic.animated.description": "While food still satiates you, you cannot starve, and it seems breathing is also redundant.",
+  "power.daemonic.fae.name": "Fae",
+  "power.daemonic.fae.description": "Your demon part is burnt by the cold fetters of iron.",
+  "power.daemonic.undead.name": "Undying",
+  "power.daemonic.undead.description": "The sun makes your body and soul fragile, tripling all damage you receive.",
+  "power.daemonic.empty_siphon.name": "Transmutation",
+  "power.daemonic.empty_siphon.description": "The powers of siphoning soul do not affect you, and you yourself can convert experience into lifeforce.",
+  "item.daemonic.cursed_soul": "Cursed Soul",
+  "block.daemonic.chained_daemon_block": "Soulsnare",
+  "block.daemonic.chain_block": "Block of Chains"
+}

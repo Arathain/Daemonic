@@ -1,0 +1,5 @@
+{
+  "type": "origins:effect_immunity",
+  "effect": "minecraft:wither",
+  "hidden": true
+}

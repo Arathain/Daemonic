@@ -1,0 +1,16 @@
+{
+  "type": "origins:conditioned_attribute",
+  "modifier": {
+    "attribute": "generic.movement_speed",
+    "operation": "multiply_base",
+    "value": 2.5,
+    "name": "movement speed increase"
+  },
+  "hidden": true,
+  "condition": {
+    "type": "origins:resource",
+    "resource": "daemonic:nightmarejuice",
+    "comparison": ">",
+    "compare_to": "1"
+  }
+}

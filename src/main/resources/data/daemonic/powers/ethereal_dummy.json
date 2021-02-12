@@ -1,0 +1,12 @@
+{
+  "type": "origins:particle",
+  "particle": "totem_of_undying",
+  "frequency": "1",
+  "hidden": true,
+  "condition": {
+    "type": "origins:resource",
+    "resource": "daemonic:nightmarejuice",
+    "comparison": ">",
+    "compare_to": "1"
+  }
+}

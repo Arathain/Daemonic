@@ -1,0 +1,12 @@
+{
+  "type": "origins:modify_damage_taken",
+  "modifier": {
+    "name": "More damage taken",
+    "value": 2,
+    "operation": "multiply_total"
+  },
+  "condition": {
+    "type": "origins:exposed_to_sun"
+  }
+
+}

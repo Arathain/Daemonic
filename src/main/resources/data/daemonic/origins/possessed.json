@@ -1,0 +1,20 @@
+{
+  "powers": [
+    "origins:water_vulnerability",
+    "daemonic:nightmarejuice",
+    "daemonic:ethereal",
+    "daemonic:ethereal_dummy",
+    "daemonic:ethereal_dummy_2",
+    "daemonic:ethereal_dummy_3",
+    "daemonic:ethereal_transport",
+    "daemonic:ethereal_waning",
+    "daemonic:animated",
+    "daemonic:undead",
+    "daemonic:empty_siphon",
+    "daemonic:empty_siphon_dummy",
+    "daemonic:fae"
+  ],
+  "icon": "daemonic:cursed_soul",
+  "order": 4,
+  "impact": 2
+}

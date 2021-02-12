@@ -1,0 +1,11 @@
+{
+  "type": "origins:invisibility",
+  "render_armor": false,
+  "hidden": true,
+  "condition": {
+    "type": "origins:resource",
+    "resource": "daemonic:nightmarejuice",
+    "comparison": ">",
+    "compare_to": "1"
+  }
+}
