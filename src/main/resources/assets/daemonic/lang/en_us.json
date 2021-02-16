@@ -1,7 +1,7 @@
 {
   "effect.daemonic.transmutation": "Transmutation",
-  "origin.daemonic.possessed.name": "Possessed",
-  "origin.daemonic.possessed.description": "Human and daemon sharing body, not quite spirit and not quite man.",
+  "origin.daemonic.cursed.name": "Cursed",
+  "origin.daemonic.cursed.description": "Human and daemon sharing body, not quite spirit and not quite man.",
   "power.daemonic.ethereal.name": "Ethereal",
   "power.daemonic.ethereal.description": "You can briefly become ethereal, being able to quickly evade danger and bypass most barriers.",
   "power.daemonic.animated.name": "Animated",
