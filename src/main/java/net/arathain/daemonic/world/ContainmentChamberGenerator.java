@@ -1,4 +1,4 @@
-package net.arathain.daemonic.registry;
+package net.arathain.daemonic.world;
 
 import net.arathain.daemonic.Daemonic;
 import net.minecraft.nbt.CompoundTag;
@@ -16,27 +16,28 @@ import java.util.List;
 import java.util.Random;
 
 public class ContainmentChamberGenerator {
-    public static final Identifier CONTAINMENT_CHAMBER = new Identifier("containment_chamber/containment_chamber");
+    private static final Identifier CHAMBER = new Identifier("daemonic:containment_chamber");
 
     public static void addPieces(StructureManager manager, BlockPos pos, BlockRotation rotation, List<StructurePiece> pieces, ChunkRandom random) {
-        pieces.add(new ContainmentChamberGenerator.Piece(manager, pos, CONTAINMENT_CHAMBER, rotation));
+        pieces.add(new ChamberPiece(manager, pos, CHAMBER, rotation));
     }
-    public static class Piece extends SimpleStructurePiece {
+    public static class ChamberPiece extends SimpleStructurePiece {
         private final BlockRotation rotation;
         private final Identifier template;
 
-        public Piece(StructureManager structureManager, CompoundTag compoundTag) {
+        public ChamberPiece(StructureManager structureManager, CompoundTag compoundTag) {
             super(Daemonic.CHAMBER_PIECE, compoundTag);
             this.template = new Identifier(compoundTag.getString("Template"));
             this.rotation = BlockRotation.valueOf(compoundTag.getString("Rot"));
             this.initializeStructureData(structureManager);
         }
 
-        public Piece(StructureManager structureManager, BlockPos pos, Identifier template, BlockRotation rotation) {
+        public ChamberPiece(StructureManager structureManager, BlockPos pos, Identifier template, BlockRotation rotation) {
             super(Daemonic.CHAMBER_PIECE, 0);
             this.pos = pos;
             this.rotation = rotation;
             this.template = template;
+
             this.initializeStructureData(structureManager);
         }
 

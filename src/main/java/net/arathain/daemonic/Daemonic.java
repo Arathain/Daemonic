@@ -1,12 +1,14 @@
 package net.arathain.daemonic;
 
-import net.arathain.daemonic.registry.ContainmentChamberGenerator;
-import net.arathain.daemonic.registry.ContainmentChamberStructureFeature;
+import net.arathain.daemonic.world.ContainmentChamberFeature;
+import net.arathain.daemonic.world.ContainmentChamberGenerator;
 import net.fabricmc.api.ModInitializer;
 import net.fabricmc.fabric.api.block.FabricBlockSettings;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
+
 import net.fabricmc.fabric.api.structure.v1.FabricStructureBuilder;
 import net.fabricmc.fabric.api.tool.attribute.v1.FabricToolTags;
+import net.minecraft.block.AbstractBlock;
 import net.minecraft.block.Block;
 import net.minecraft.block.Material;
 import net.minecraft.entity.effect.StatusEffect;
@@ -25,16 +27,18 @@ import net.minecraft.world.gen.feature.ConfiguredStructureFeature;
 import net.minecraft.world.gen.feature.DefaultFeatureConfig;
 import net.minecraft.world.gen.feature.StructureFeature;
 
+
 public class Daemonic implements ModInitializer {
 	public static final StatusEffect TRANSMUTATION = new TransmutationStatusEffect();
 	public static final Item CURSED_SOUL = new Item(new FabricItemSettings());
-	public static final Block CHAINED_DAEMON_BLOCK = new Block(FabricBlockSettings.of(Material.METAL).lightLevel(10).strength(10.0f, 6.0f).breakByTool(FabricToolTags.PICKAXES, 2).sounds(BlockSoundGroup.CHAIN).build());
+	public static final Block CHAINED_DAEMON_BLOCK = new Block(net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings.of(Material.METAL).lightLevel(10).strength(10.0f, 6.0f).breakByTool(FabricToolTags.PICKAXES, 2).sounds(BlockSoundGroup.CHAIN));
 	public static final Item CHAINED_DAEMON_BLOCK_ITEM = new BlockItem(CHAINED_DAEMON_BLOCK, new Item.Settings().group(ItemGroup.BUILDING_BLOCKS));
-	public static final Block CHAIN_BLOCK = new Block(FabricBlockSettings.of(Material.METAL).strength(10.0f, 6.0f).breakByTool(FabricToolTags.PICKAXES, 2).sounds(BlockSoundGroup.CHAIN).build());
+	public static final Block CHAIN_BLOCK = new Block(net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings.of(Material.METAL).strength(10.0f, 6.0f).breakByTool(FabricToolTags.PICKAXES, 2).sounds(BlockSoundGroup.CHAIN));
 	public static final Item CHAIN_BLOCK_ITEM = new BlockItem(CHAIN_BLOCK, new Item.Settings().group(ItemGroup.BUILDING_BLOCKS));
-	public static final StructurePieceType CHAMBER_PIECE = ContainmentChamberGenerator.Piece::new;
-	private static final StructureFeature<DefaultFeatureConfig> CHAMBER_STRUCTURE = new ContainmentChamberStructureFeature(DefaultFeatureConfig.CODEC);
+	public static final StructurePieceType CHAMBER_PIECE = ContainmentChamberGenerator.ChamberPiece::new;
+	private static final StructureFeature<DefaultFeatureConfig> CHAMBER_STRUCTURE = new ContainmentChamberFeature(DefaultFeatureConfig.CODEC);
 	private static final ConfiguredStructureFeature<?, ?> CHAMBER_CONFIGURED = CHAMBER_STRUCTURE.configure(DefaultFeatureConfig.DEFAULT);
+
 	@Override
 	public void onInitialize() {
 		Registry.register(Registry.ITEM, new Identifier("daemonic", "cursed_soul"), CURSED_SOUL);
@@ -50,9 +54,10 @@ public class Daemonic implements ModInitializer {
 				.adjustsSurface()
 				.register();
 
-		RegistryKey<ConfiguredStructureFeature<?, ?>> chamberConfigured = RegistryKey.of(Registry.CONFIGURED_STRUCTURE_FEATURE_WORLDGEN,
-				new Identifier("tutorial", "chamber_structure"));
-		BuiltinRegistries.add(BuiltinRegistries.CONFIGURED_STRUCTURE_FEATURE, chamberConfigured.getValue(), CHAMBER_CONFIGURED);
+		RegistryKey<ConfiguredStructureFeature<?, ?>> myConfigured = RegistryKey.of(Registry.CONFIGURED_STRUCTURE_FEATURE_WORLDGEN,
+				new Identifier("daemonic", "chamber_structure"));
+		BuiltinRegistries.add(BuiltinRegistries.CONFIGURED_STRUCTURE_FEATURE, myConfigured.getValue(), CHAMBER_CONFIGURED);
+
 	}
 
 }
