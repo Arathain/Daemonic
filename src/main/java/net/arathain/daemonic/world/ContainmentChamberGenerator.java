@@ -16,7 +16,7 @@ import java.util.List;
 import java.util.Random;
 
 public class ContainmentChamberGenerator {
-    private static final Identifier CHAMBER = new Identifier ("daemonic:containment_chamber");
+    private static final Identifier CHAMBER = new Identifier ("daemonic:containment_chamber/containment_chamber");
 
     public static void addPieces(StructureManager manager, BlockPos pos, BlockRotation rotation, List<StructurePiece> pieces, ChunkRandom random) {
         pieces.add(new Piece(manager, pos, CHAMBER, rotation));

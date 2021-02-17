@@ -54,7 +54,7 @@ public class Daemonic implements ModInitializer {
 				.register();
 
 		RegistryKey<ConfiguredStructureFeature<?, ?>> myConfigured = RegistryKey.of(Registry.CONFIGURED_STRUCTURE_FEATURE_WORLDGEN,
-				new Identifier("daemonic", "chamber_structure"));
+				new Identifier("daemonic", "containment_chamber/containment_chamber"));
 		BuiltinRegistries.add(BuiltinRegistries.CONFIGURED_STRUCTURE_FEATURE, myConfigured.getValue(), CHAMBER_CONFIGURED);
 
 	}
