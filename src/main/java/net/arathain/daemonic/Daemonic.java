@@ -1,5 +1,6 @@
 package net.arathain.daemonic;
 
+import net.arathain.daemonic.block.ChainedDaemonBlock;
 import net.arathain.daemonic.world.ContainmentChamberFeature;
 import net.arathain.daemonic.world.ContainmentChamberGenerator;
 import net.fabricmc.api.ModInitializer;
@@ -29,7 +30,7 @@ import net.minecraft.world.gen.feature.StructureFeature;
 public class Daemonic implements ModInitializer {
 	public static final StatusEffect TRANSMUTATION = new TransmutationStatusEffect();
 	public static final Item CURSED_SOUL = new Item(new FabricItemSettings());
-	public static final Block CHAINED_DAEMON_BLOCK = new Block(net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings.of(Material.METAL).lightLevel(10).strength(10.0f, 6.0f).breakByTool(FabricToolTags.PICKAXES, 2).sounds(BlockSoundGroup.CHAIN));
+	public static final Block CHAINED_DAEMON_BLOCK = new ChainedDaemonBlock(net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings.of(Material.METAL).lightLevel(10).strength(10.0f, 6.0f).breakByTool(FabricToolTags.PICKAXES, 2).sounds(BlockSoundGroup.CHAIN));
 	public static final Item CHAINED_DAEMON_BLOCK_ITEM = new BlockItem(CHAINED_DAEMON_BLOCK, new Item.Settings().group(ItemGroup.BUILDING_BLOCKS));
 	public static final Block CHAIN_BLOCK = new Block(net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings.of(Material.METAL).strength(10.0f, 6.0f).breakByTool(FabricToolTags.PICKAXES, 2).sounds(BlockSoundGroup.CHAIN));
 	public static final Item CHAIN_BLOCK_ITEM = new BlockItem(CHAIN_BLOCK, new Item.Settings().group(ItemGroup.BUILDING_BLOCKS));
