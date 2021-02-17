@@ -34,7 +34,7 @@ public class Daemonic implements ModInitializer {
 	public static final Item CHAINED_DAEMON_BLOCK_ITEM = new BlockItem(CHAINED_DAEMON_BLOCK, new Item.Settings().group(ItemGroup.BUILDING_BLOCKS));
 	public static final Block CHAIN_BLOCK = new Block(net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings.of(Material.METAL).strength(10.0f, 6.0f).breakByTool(FabricToolTags.PICKAXES, 2).sounds(BlockSoundGroup.CHAIN));
 	public static final Item CHAIN_BLOCK_ITEM = new BlockItem(CHAIN_BLOCK, new Item.Settings().group(ItemGroup.BUILDING_BLOCKS));
-	public static final StructurePieceType CHAMBER_PIECE = ContainmentChamberGenerator.ChamberPiece::new;
+	public static final StructurePieceType CHAMBER_PIECE = ContainmentChamberGenerator.Piece::new;
 	private static final StructureFeature<DefaultFeatureConfig> CHAMBER_STRUCTURE = new ContainmentChamberFeature(DefaultFeatureConfig.CODEC);
 	private static final ConfiguredStructureFeature<?, ?> CHAMBER_CONFIGURED = CHAMBER_STRUCTURE.configure(DefaultFeatureConfig.DEFAULT);
 

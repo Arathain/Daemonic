@@ -16,23 +16,23 @@ import java.util.List;
 import java.util.Random;
 
 public class ContainmentChamberGenerator {
-    private static final Identifier CHAMBER = new Identifier("daemonic:containment_chamber");
+    private static final Identifier CHAMBER = new Identifier ("daemonic:containment_chamber");
 
     public static void addPieces(StructureManager manager, BlockPos pos, BlockRotation rotation, List<StructurePiece> pieces, ChunkRandom random) {
-        pieces.add(new ChamberPiece(manager, pos, CHAMBER, rotation));
+        pieces.add(new Piece(manager, pos, CHAMBER, rotation));
     }
-    public static class ChamberPiece extends SimpleStructurePiece {
+    public static class Piece extends SimpleStructurePiece {
         private final BlockRotation rotation;
         private final Identifier template;
 
-        public ChamberPiece(StructureManager structureManager, CompoundTag compoundTag) {
+        public Piece(StructureManager structureManager, CompoundTag compoundTag) {
             super(Daemonic.CHAMBER_PIECE, compoundTag);
             this.template = new Identifier(compoundTag.getString("Template"));
             this.rotation = BlockRotation.valueOf(compoundTag.getString("Rot"));
             this.initializeStructureData(structureManager);
         }
 
-        public ChamberPiece(StructureManager structureManager, BlockPos pos, Identifier template, BlockRotation rotation) {
+        public Piece(StructureManager structureManager, BlockPos pos, Identifier template, BlockRotation rotation) {
             super(Daemonic.CHAMBER_PIECE, 0);
             this.pos = pos;
             this.rotation = rotation;
