@@ -1,0 +1,9 @@
+{
+  "type":"origins:modify_xp_gain",
+  "modifier": {
+    "operation": "multiply_base",
+    "value": 1.5,
+    "name": "Increase experience gain"
+  },
+  "hidden": true
+}

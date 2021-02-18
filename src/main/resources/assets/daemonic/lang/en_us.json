@@ -11,7 +11,9 @@
   "power.daemonic.undead.name": "Undying",
   "power.daemonic.undead.description": "The sun makes your body and soul fragile, tripling all damage you receive.",
   "power.daemonic.empty_siphon.name": "Transmutation",
-  "power.daemonic.empty_siphon.description": "The powers of siphoning soul do not affect you, and you yourself can convert experience into lifeforce.",
+  "power.daemonic.empty_siphon.description": "The powers of siphoning soul do not affect you, and you yourself can convert experience into lifeforce at higher levels.",
+  "power.daemonic.soul_leech.name": "Soul Leech",
+  "power.daemonic.soul_leech.description": "Your punches and swings drain lifeforce from the afflicted, and grant yourself more of it in the process.",
   "item.daemonic.cursed_soul": "Cursed Soul",
   "block.daemonic.chained_daemon_block": "Soulsnare",
   "block.daemonic.chain_block": "Block of Chains"

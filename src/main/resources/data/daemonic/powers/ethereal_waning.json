@@ -3,8 +3,8 @@
   "entity_action": {
     "type": "origins:change_resource",
     "resource": "daemonic:nightmarejuice",
-    "change": -2
+    "change": -1
   },
-  "interval": 20,
+  "interval": 10,
   "hidden": true
 }
