@@ -2,7 +2,7 @@
   "type": "origins:self_action_on_hit",
   "entity_action": {
     "type": "origins:add_xp",
-    "points": 5
+    "points": 2
   },
   "cooldown": 40
 }
