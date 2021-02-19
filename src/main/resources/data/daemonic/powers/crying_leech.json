@@ -1,0 +1,14 @@
+{
+  "type": "origins:self_action_on_hit",
+  "entity_action": {
+    "type": "origins:change_resource",
+    "resource": "daemonic:burned_tears",
+    "change": 1
+  },
+  "damage_condition": {
+    "type": "origins:amount",
+    "comparison": ">=",
+    "compare_to": 3.0
+  },
+  "cooldown": 20
+}

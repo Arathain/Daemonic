@@ -1,6 +1,7 @@
 {
   "replace": false,
   "origins": [
-    "daemonic:cursed"
+    "daemonic:cursed",
+    "daemonic:weeping"
   ]
 }

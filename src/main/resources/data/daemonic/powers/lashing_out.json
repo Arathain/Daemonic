@@ -1,0 +1,8 @@
+{
+  "type": "origins:modify_damage_dealt",
+  "modifier": {
+    "operation": "multiply_base",
+    "value": 1.5,
+    "name": "damage dealt modifier"
+  }
+}

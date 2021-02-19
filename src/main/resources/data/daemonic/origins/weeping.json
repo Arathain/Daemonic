@@ -1,0 +1,12 @@
+{
+  "powers": [
+    "daemonic:fae",
+    "daemonic:fragile",
+    "daemonic:burned_tears",
+    "daemonic:lashing_out",
+    "daemonic:crying_leech"
+  ],
+  "icon": "daemonic:weeping_crystal",
+  "order": 4,
+  "impact": 2
+}
