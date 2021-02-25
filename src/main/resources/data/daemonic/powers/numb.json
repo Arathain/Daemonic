@@ -1,4 +1,5 @@
 {
   "type": "origins:effect_immunity",
-  "effect": "daemonic:anguish"
+  "effect": "daemonic:anguish",
+  "hidden": true
 }

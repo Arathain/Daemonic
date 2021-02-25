@@ -8,6 +8,10 @@
     "daemonic:speed_daemon",
     "daemonic:fast",
     "daemonic:drying_of_tears",
+    "daemonic:spreading_anguish",
+    "daemonic:spreading_anguish_dummy",
+    "daemonic:numb",
+    "daemonic:dripping_tears",
     "origins:extra_reach",
     "origins:more_kinetic_damage",
     "origins:water_vulnerability"

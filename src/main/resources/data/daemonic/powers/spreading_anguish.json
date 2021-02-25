@@ -2,12 +2,12 @@
   "type": "origins:active_self",
   "entity_action": {
     "type": "origins:spawn_effect_cloud",
-    "radius": 10.0,
+    "radius": 8.0,
     "wait_time": 10,
     "effect": {
       "effect": "daemonic:anguish",
       "amplifier": 1,
-      "duration": 100
+      "duration": 40
     }
   },
   "cooldown": 600,
