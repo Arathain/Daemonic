@@ -1,0 +1,10 @@
+{
+  "type": "origins:action_over_time",
+  "entity_action": {
+    "type": "origins:change_resource",
+    "resource": "daemonic:burned_tears",
+    "change": -1
+  },
+  "interval": 400,
+  "hidden": true
+}

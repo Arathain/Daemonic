@@ -4,7 +4,13 @@
     "daemonic:fragile",
     "daemonic:burned_tears",
     "daemonic:lashing_out",
-    "daemonic:crying_leech"
+    "daemonic:crying_leech",
+    "daemonic:speed_daemon",
+    "daemonic:fast",
+    "daemonic:drying_of_tears",
+    "origins:extra_reach",
+    "origins:more_kinetic_damage",
+    "origins:water_vulnerability"
   ],
   "icon": "daemonic:weeping_crystal",
   "order": 4,

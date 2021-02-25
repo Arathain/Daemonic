@@ -1,0 +1,10 @@
+{
+  "type": "origins:attribute",
+  "modifier":{
+    "attribute": "generic.attack_speed",
+    "operation": "multiply_base",
+    "value": 2,
+    "name": "Attack speed doubling"
+  }
+
+}

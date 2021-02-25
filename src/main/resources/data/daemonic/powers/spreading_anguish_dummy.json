@@ -1,0 +1,19 @@
+{
+  "type": "origins:active_self",
+  "entity_action": {
+    "type": "origins:change_resource",
+    "resource": "daemonic:burned_tears",
+    "change": -10
+  },
+  "cooldown": 600,
+  "hud_render": {
+    "should_render": false
+  },
+  "hidden": true,
+  "condition": {
+    "type": "origins:resource",
+    "resource": "daemonic:burned_tears",
+    "comparison": ">",
+    "compare_to": "11"
+  }
+}

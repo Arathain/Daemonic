@@ -1,14 +1,17 @@
 {
-  "type": "origins:modify_damage_dealt",
-  "modifier": {
+  "type": "origins:attribute",
+  "modifier":{
+    "attribute": "generic.movement_speed",
     "operation": "multiply_base",
     "value": 2,
-    "name": "damage dealt modifier"
+    "name": "Speed doubling"
   },
   "condition": {
     "type": "origins:resource",
     "resource": "daemonic:burned_tears",
     "comparison": ">=",
-    "compare_to": 21
-  }
+    "compare_to": 6
+  },
+  "hidden": true
+
 }

@@ -1,6 +1,7 @@
 package net.arathain.daemonic;
 
 import net.arathain.daemonic.block.ChainedDaemonBlock;
+import net.arathain.daemonic.effect.AnguishStatusEffect;
 import net.arathain.daemonic.world.ContainmentChamberFeature;
 import net.arathain.daemonic.world.ContainmentChamberGenerator;
 import net.fabricmc.api.ModInitializer;
@@ -29,6 +30,7 @@ import net.minecraft.world.gen.feature.StructureFeature;
 
 public class Daemonic implements ModInitializer {
 	public static final StatusEffect TRANSMUTATION = new TransmutationStatusEffect();
+	public static final StatusEffect ANGUISH = new AnguishStatusEffect();
 	public static final Item CURSED_SOUL = new Item(new FabricItemSettings());
 	public static final Item WEEPING_CRYSTAL = new Item(new FabricItemSettings());
 	public static final Block CHAINED_DAEMON_BLOCK = new ChainedDaemonBlock(net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings.of(Material.METAL).lightLevel(10).strength(10.0f, 6.0f).breakByTool(FabricToolTags.PICKAXES, 2).sounds(BlockSoundGroup.CHAIN));
@@ -48,6 +50,7 @@ public class Daemonic implements ModInitializer {
 		Registry.register(Registry.BLOCK, new Identifier("daemonic", "chain_block"), CHAIN_BLOCK);
 		Registry.register(Registry.ITEM, new Identifier("daemonic", "chain_block"), CHAIN_BLOCK_ITEM);
 		Registry.register(Registry.STATUS_EFFECT, new Identifier("daemonic", "transmutation"), TRANSMUTATION);
+		Registry.register(Registry.STATUS_EFFECT, new Identifier("daemonic", "anguish"), ANGUISH);
 		Registry.register(Registry.STRUCTURE_PIECE, new Identifier("daemonic", "chamber_piece"), CHAMBER_PIECE);
 		FabricStructureBuilder.create(new Identifier("daemonic", "chamber_structure"), CHAMBER_STRUCTURE)
 				.step(GenerationStep.Feature.SURFACE_STRUCTURES)
