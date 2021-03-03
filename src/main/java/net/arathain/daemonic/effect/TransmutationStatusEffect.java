@@ -25,7 +25,7 @@ public class TransmutationStatusEffect extends StatusEffect {
             if (((PlayerEntity) entity).experienceLevel > 40) {
                 if ((entity).getHealth() < (entity).getMaxHealth()) {
                     (entity).heal(1 << amplifier);
-                    ((PlayerEntity) entity).addExperience(-30 << amplifier);
+                    ((PlayerEntity) entity).addExperience(-16 << amplifier);
                 }
             }
         }

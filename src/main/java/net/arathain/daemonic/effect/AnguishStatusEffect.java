@@ -21,8 +21,8 @@ public class AnguishStatusEffect extends StatusEffect {
 
     @Override
     public void applyUpdateEffect(LivingEntity entity, int amplifier) {
-        if ((entity).getHealth() > 4) {
+
                     (entity).damage(DamageSource.WITHER, 2 << amplifier);
-        }
+
     }
 }
